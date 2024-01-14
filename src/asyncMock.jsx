@@ -45,4 +45,16 @@ export const getProductById = (productId) => {
     }, 500)
     
     })
+
+   
 }
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category.toLowerCase() === categoryId.toLowerCase()))
+        }, 500)
+    })
+}
+
+/*.toLowerCase() por las mayusculas y minusculas en las categorias*/

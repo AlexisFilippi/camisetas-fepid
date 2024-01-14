@@ -1,20 +1,22 @@
+import { NavLink, Link } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
 import './NavBar.css'
 const NavBar = () => {
     return (
-        <nav>
-            <div className="NavBar">
-                <h1 className="tituloNavBar">Camisetas Fepid</h1>
+        <nav className="NavBar">
+            <Link to='/'>
+            <h1 className="tituloNavBar">Camisetas Fepid</h1>
+            </Link>
 
-                <div className="categoriaNavBar">
-                    <button>Futbol</button>
-                    <button>NBA</button>
-                    <button>NFL</button>
-                    <CartWidget />
-                </div>
-
+            <div className="categoriaNavBar">
+             <NavLink to={`/category/futbol`} >Futbol</NavLink>
+             <NavLink to={`/category/nba`}>NBA</NavLink>
+             <NavLink to={`/category/nfl`}>NFL</NavLink>
                 
             </div>
+            <CartWidget />
+
+
         </nav>
     )
 }

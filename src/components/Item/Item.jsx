@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Item = ({id, name, img, price, stock}) => {
     return(
         <article>
@@ -16,7 +18,7 @@ const Item = ({id, name, img, price, stock}) => {
                 </p>
             </section>
             <footer>
-                <button>Ver detalle</button>
+                <Link to={`/item/${id}`}>Ver detalle</Link>
             </footer>
         </article>
     )
