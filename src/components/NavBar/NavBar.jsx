@@ -9,9 +9,9 @@ const NavBar = () => {
             </Link>
 
             <div className="categoriaNavBar">
-             <NavLink to={`/category/futbol`} >Futbol</NavLink>
-             <NavLink to={`/category/nba`}>NBA</NavLink>
-             <NavLink to={`/category/nfl`}>NFL</NavLink>
+             <NavLink to={`/category/futbol`} className="categorias">Futbol</NavLink>
+             <NavLink to={`/category/nba`} className="categorias">NBA</NavLink>
+             <NavLink to={`/category/nfl`} className="categorias">NFL</NavLink>
                 
             </div>
             <CartWidget />

@@ -1,6 +1,6 @@
-.ItemListContainer{
+.ListGroup{
     display: flex;
-    background-color: beige;
     justify-content: center;
+    gap: 150px;
     
 }

@@ -21,7 +21,7 @@ const products = [
     ,
     {
         id: '3',
-        name: 'Camiseta Broncos Denver Champ Bailey',
+        name: 'Camiseta Broncos Denver',
         price: '$54000',
         category: 'NFL',
         img: 'https://fanatics.frgimages.com/denver-broncos/mens-nike-champ-bailey-orange-denver-broncos-game-retired-player-jersey_pi3974000_ff_3974159-642392345491d2420709_full.jpg?_hv=2&w=340',

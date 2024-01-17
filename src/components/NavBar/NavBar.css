@@ -1,18 +1,29 @@
-
-.NavBar{
- display: flex;
- justify-content: space-around; 
- align-items: center;  
- background-color: gray;
- color: white;
- .tituloNavBar{
-    font-size: 40px;
+.NavBar {
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
 
-}
-.categoriaNavBar{
-    justify-content: end;
-    display: flex;
-}
+    .tituloNavBar {
+        font-size: 40px;
+        display: flex;
+        justify-content: end;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .categoriaNavBar {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .categorias {
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
