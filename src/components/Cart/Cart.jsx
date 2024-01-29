@@ -6,14 +6,9 @@ import CartItem from "../CartItem/CartItem"
 
 
 const Cart = () => {
-    const { cart, clearCart, totalQuantity, } = useContext(CartContext)
+    const { cart, clearCart, totalQuantity } = useContext(CartContext)
 
-    const calcularTotal = () => {
-        return cart.reduce((total, item) => total + item.price * item.quantity, 0);
-      };
     
-      const total = calcularTotal();
-
     if(totalQuantity === 0){
         return (
             <div>
@@ -23,7 +18,12 @@ const Cart = () => {
         )
 
     }
-     
+    const calcularTotal = () => {
+        return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+      };
+    
+      const total = calcularTotal();
+
     return (
         <div>
             { cart.map(p => <CartItem key={p.id} {...p}/>) }
@@ -33,5 +33,7 @@ const Cart = () => {
         </div>
     )
 }
+
+
 
 export default Cart

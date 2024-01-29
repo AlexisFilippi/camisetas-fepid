@@ -31,11 +31,23 @@ export const CartProvider = ({ children }) => {
         return cart.some(prod => prod.id === itemId)
     }
 
+    const getTotalQuantity = () => {
+        return cart.reduce((acc, prod) => acc + prod.quantity, 0)
+    }
+
+    const totalQuantity = getTotalQuantity()
+
+    const getTotal = () => {
+
+    }
+
+    const total = getTotal()
 
 
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity, total }}>
             {children}
         </CartContext.Provider>
     )
 }
+

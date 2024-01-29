@@ -5,7 +5,7 @@ import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
 
-    const [quantityAdded, setQuantityAdded] = useState (0)
+    const [quantityAdded, setQuantityAdded] = useState ()
 
     const { addItem } = useContext(CartContext)
 
