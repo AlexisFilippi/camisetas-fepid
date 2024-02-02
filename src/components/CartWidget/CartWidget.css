@@ -1,0 +1,6 @@
+.cartWidgetContainer{
+    display: flex;
+    align-items: center;
+    color: beige;
+    font-size: 20px;
+}

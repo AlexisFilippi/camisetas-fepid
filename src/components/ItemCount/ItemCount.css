@@ -1,0 +1,35 @@
+.botonContenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    line-height: 0;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    align-items: center;
+    
+    
+
+
+    .my-button {
+        padding: 10px 20px;
+        background-color: beige;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        
+        
+        
+        
+    }
+
+    .my-button:hover {
+        background-color: #739d6d;
+    }
+
+    .my-button:active {
+        background-color: #739d6d;
+    }
+}

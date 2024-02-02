@@ -1,0 +1,22 @@
+.cartContenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    
+   .checkout{
+    color: beige;
+    font-weight: bold;
+    font-size: 22px;
+   }
+    .botonCheckout{
+        background-color: #4a7150;
+        border: 2px black solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        
+    }
+   }

@@ -1,0 +1,17 @@
+.productContainer{
+    margin: 100px 0px 100px 0px; 
+    background-color: #2a553f;
+    color: wheat;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+
+
+}
+.TerminarCompra{
+    color: #d9ca80;
+}

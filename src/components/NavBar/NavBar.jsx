@@ -5,11 +5,11 @@ const NavBar = () => {
     return (
         <nav className="NavBar">
             <Link to='/'>
-            <h1 className="tituloNavBar">Camisetas Fepid</h1>
+            <h1 className="tituloNavBar">CAMISETAS FEPID</h1>
             </Link>
 
             <div className="categoriaNavBar">
-             <NavLink to={`/category/futbol`} className="categorias">Futbol</NavLink>
+             <NavLink to={`/category/futbol`} className="categorias">FÚTBOL</NavLink>
              <NavLink to={`/category/nba`} className="categorias">NBA</NavLink>
              <NavLink to={`/category/nfl`} className="categorias">NFL</NavLink>
                 

@@ -2,16 +2,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: gray;
+    background-color: #16412f;
     color: white;
     text-decoration: none;
+    padding: 10px;
 
     .tituloNavBar {
-        font-size: 40px;
+        font-size: 42px;
         display: flex;
         justify-content: end;
-        color: white;
+        color: wheat;
         text-decoration: none;
+        font-family: 'Shadows Into Light', cursive;
 
     }
 
@@ -21,9 +23,10 @@
         gap: 50px;
 
         .categorias {
-            font-size: 24px;
+            font-size: 28px;
             text-decoration: none;
-            color: white;
+            color: wheat;
+            font-family: 'Fjalla One', sans-serif;
         }
     }
 }
