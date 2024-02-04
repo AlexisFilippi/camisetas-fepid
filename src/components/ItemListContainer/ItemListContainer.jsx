@@ -34,9 +34,9 @@ const ItemListContainer = ({ greeting }) => {
 
 
     return (
-        <div >
+        <div className="containerProducts" >
             <h1>{greeting}</h1>
-            <div className="containerProducts">
+            <div >
                 <ItemList products={products} />
             </div>
         </div>

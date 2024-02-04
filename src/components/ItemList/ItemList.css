@@ -1,8 +1,7 @@
 .ListGroup{
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
     
     
     
