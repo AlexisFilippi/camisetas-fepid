@@ -30,15 +30,26 @@ export const CartProvider = ({ children }) => {
     const isInCart = (itemId) => {
         return cart.some(prod => prod.id === itemId)
     }
-
     const getTotalQuantity = () => {
-        return cart.reduce((acc, prod) => acc + prod.quantity, 0)
+        let accu = 0
+
+        cart.forEach(prod => {
+            accu += prod.quantity
+        })
+
+        return accu
     }
 
     const totalQuantity = getTotalQuantity()
 
     const getTotal = () => {
+        let accu = 0
 
+        cart.forEach(prod => {
+            accu += prod.quantity * prod.price
+        })
+
+        return accu
     }
 
     const total = getTotal()

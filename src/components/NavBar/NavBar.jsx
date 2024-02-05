@@ -12,6 +12,7 @@ const NavBar = () => {
              <NavLink to={`/category/futbol`} className="categorias">FÚTBOL</NavLink>
              <NavLink to={`/category/nba`} className="categorias">NBA</NavLink>
              <NavLink to={`/category/nfl`} className="categorias">NFL</NavLink>
+             <NavLink to={`/contacto`} className="categorias">Contacto</NavLink>
                 
             </div>
             <CartWidget />
